@@ -3,13 +3,13 @@
     <h5>Add Product</h5>
 
     <div id="formWrapper" class="row card">
-      <form id="product_form" class="col s12" @submit.prevent="addProduct">
+      <form id="#product_form" class="col s12" @submit.prevent="addProduct">
         <div class="row">
-          <p name="projectType" class="labelHeading" id="projectType"> Product Switcher</p>
+          <p class="labelHeading" id="#productType"> Product Switcher</p>
           <div class="input-field col s12">
             <select class="browser-default" v-model="product.productType">
               <option disabled selected>Product type</option>
-              <option value="DVD">DVD-disc</option>
+              <option value="DVD">DVD</option>
               <option value="Book">Book</option>
               <option value="Furniture">Furniture</option>
             </select>
@@ -18,20 +18,20 @@
 
         <div class="row">
           <div class="input-field col s12">
-            <input name="sku" id="sku" required type="text" v-model="product.sku" />
+            <input id="#sku" required type="text" v-model="product.sku" />
             <label>SKU</label>
           </div>
         </div>
 
         <div class="row">
           <div class="input-field col s12">
-            <input name="name" id="name" required type="text" v-model="product.name" />
+            <input id="#name" required type="text" v-model="product.name" />
             <label>Product name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input name="price" id="price" required type="number" class="validate" v-model="product.price" />
+            <input id="#price" required type="number" class="validate" v-model="product.price" />
             <label>Price</label>
           </div>
         </div>
@@ -39,8 +39,8 @@
         <template v-if="product.productType === 'DVD'">
           <div class="row">
             <div class="input-field col s12">
-              <input name="size" id="size" type="number" class="validate" v-model="product.size" />
-              <label>Size</label>
+              <input id="#size" type="number" class="validate" v-model="product.size" />
+              <label>Please provide, size</label>
             </div>
           </div>
         </template>
@@ -48,8 +48,8 @@
         <template v-if="product.productType === 'Book'">
           <div class="row">
             <div class="input-field col s12">
-              <input name="weight" id="weight" type="number" class="validate" v-model="product.weight" />
-              <label>Weight</label>
+              <input id="#weight" type="number" class="validate" v-model="product.weight" />
+              <label>Please provide, weight</label>
             </div>
           </div>
         </template>
@@ -57,28 +57,28 @@
         <template v-if="product.productType === 'Furniture'">
           <div class="row">
             <div class="input-field col s12">
-              <input name="length" id="length" type="number" class="validate" v-model="product.length" />
-              <label>Length</label>
+              <input id="#length" type="number" class="validate" v-model="product.length" />
+              <label>Please provide, dimension</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s12">
-              <input name="width" id="width" type="number" class="validate" v-model="product.width" />
-              <label>Width</label>
+              <input id="#width" type="number" class="validate" v-model="product.width" />
+              <label>Please provide, dimension</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s12">
-              <input name="height" id="height" type="number" class="validate" v-model="product.height" />
-              <label>Height</label>
+              <input id="#height" type="number" class="validate" v-model="product.height" />
+              <label>Please provide, dimension</label>
             </div>
           </div>
         </template>
 
-        <button name="Save" class="btn btn-small">save</button>
-        <a name="Cancel" @click="cancel()" class="btn btn-small white black-text cancel">cancel</a>
+        <button type="submit" class="btn btn-small">Save</button>
+        <button type="button" @click="cancel()" class="btn btn-small white black-text cancel">Cancel</button>
 
       </form>
     </div>
@@ -205,3 +205,5 @@ h5 {
   margin-left: 15px;
 }
 </style>
+
+
