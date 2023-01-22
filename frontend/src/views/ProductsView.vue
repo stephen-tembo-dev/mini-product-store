@@ -24,7 +24,7 @@
       <h5>Product List</h5>
 
       <div class="row">
-        <RouterLink to="/add-product" class="btn white black-text btn-small">Add</RouterLink>
+        <RouterLink to="/add-product" class="btn white black-text btn-small">ADD</RouterLink>
 
         <button class="btn red btn-small right delete-checkbox" @click="deleteProducts()" v-if="deleteProductList.length > 0">
           mass delete
