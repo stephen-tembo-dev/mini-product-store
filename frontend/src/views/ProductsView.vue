@@ -96,7 +96,7 @@ export default {
       try {
         const response = await axios.get("api/products");
         console.log(response);
-        this.products = response.data.data;
+        this.products = response.data;
       } catch (error) {
         this.errors = error.response.data.errors;
       }
