@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.browser-default {
+  border-radius: 20px;
+}
+

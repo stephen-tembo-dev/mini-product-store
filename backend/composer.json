@@ -1,0 +1,11 @@
+{
+    "name": "developer/scandi",
+    "type": "project",
+    "autoload": { 
+        "psr-4": { "app\\" : "./" } 
+    },
+    "require": {
+        "bramus/router": "^1.6",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
